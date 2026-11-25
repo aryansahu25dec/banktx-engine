@@ -18,3 +18,5 @@ Multi-threaded banking transaction processing system (Java 17, Spring Boot, MySQ
 
 \- Day 1: Spring Boot project, MySQL schema, seed data, CORS config
 
+\- Day 2: models, custom exceptions, JDBC repositories, GET /api/accounts
+
