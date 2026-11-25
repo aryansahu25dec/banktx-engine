@@ -1,14 +1,13 @@
 USE banktx;
 
 INSERT INTO customer (customer_id, name, contact) VALUES
- ('CUST1','Asha Rao','asha@mail.com'),
- ('CUST2','Ravi Kumar','ravi@mail.com'),
- ('CUST3','Meera Nair','meera@mail.com');
+ ('CUST01','Aarav Sharma','aarav@mail.com'),
+ ('CUST02','Priya Patel','priya@mail.com'),
+ ('CUST03','Rohan Verma','rohan@mail.com'),
+ ('CUST04','Neha Gupta','neha@mail.com');
 
 INSERT INTO account (account_id, customer_id, balance, status) VALUES
- ('ACC1001','CUST1',50000.00,'ACTIVE'),
- ('ACC1002','CUST1',20000.00,'ACTIVE'),
- ('ACC2004','CUST2',10000.00,'ACTIVE'),
- ('ACC2005','CUST2',0.00,'INACTIVE'),
- ('ACC3001','CUST3',75000.00,'ACTIVE'),
- ('ACC3002','CUST3',10000.00,'ACTIVE');
+ ('ACC1001','CUST01',50000.00,'ACTIVE'),
+ ('ACC2004','CUST02',32500.00,'ACTIVE'),
+ ('ACC3009','CUST03',10000.00,'ACTIVE'),
+ ('ACC4012','CUST04',15000.00,'INACTIVE');
