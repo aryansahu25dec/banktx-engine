@@ -31,4 +31,9 @@ public class AccountRepository {
         return jdbc.query(SELECT + " WHERE a.account_id = ?", MAPPER, accountId)
                    .stream().findFirst();
     }
+
+        public void updateBalance(String accountId, java.math.BigDecimal newBalance) {
+        jdbc.update("UPDATE account SET balance = ? WHERE account_id = ?",
+                newBalance, accountId);
+    }
 }

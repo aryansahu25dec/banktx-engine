@@ -42,4 +42,12 @@ public class TransactionRepository {
                 """, t.transactionId(), t.type(), t.sourceAccount(), t.destinationAccount(),
                 t.amount(), t.status(), t.reason(), t.errorCategory());
     }
+
+        public void insertFailure(String transactionId, String errorCategory, String reason) {
+        jdbc.update("""
+                INSERT INTO failed_transaction (transaction_id, error_category, reason)
+                VALUES (?,?,?)
+                """, transactionId, errorCategory, reason);
+    }
+    
 }
